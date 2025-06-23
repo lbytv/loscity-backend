@@ -52,7 +52,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
 
     try {
       console.log('📡 إرسال بيانات تسجيل الدخول...');
-      const response = await fetch('https://loscity-backend.onrender.com', {
+      const response = await fetch(("https://loscity-backend.onrender.com/auth/ping"), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
 
     try {
       console.log('📡 إرسال بيانات إنشاء الحساب...');
-      const response = await fetch('https://loscity-backend.onrender.com', {
+      const response = await fetch(("https://loscity-backend.onrender.com/auth/ping"), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
