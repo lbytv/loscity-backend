@@ -22,7 +22,7 @@ function App() {
 
   const checkAuthStatus = async () => {
     try {
-      const response = await fetch('hhttps://loscity-backend.onrender.com', {
+      const response = await fetch(("https://loscity-backend.onrender.com/auth/ping"), {
         credentials: 'include'
       });
       
@@ -46,7 +46,7 @@ function App() {
 
   const handleLogout = async () => {
     try {
-      await fetch('https://loscity-backend.onrender.com', {
+      await fetch("https://loscity-backend.onrender.com/auth/ping"), {
         method: 'POST',
         credentials: 'include'
       });
