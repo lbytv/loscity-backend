@@ -32,7 +32,7 @@ const LoginModal = ({ isOpen, onClose, onLogin }) => {
     setError('');
 
     try {
-      const response = await fetch("https://loscity-backend.onrender.com", {
+      const response = await fetch("https://loscity-backend.onrender.com/auth/ping"), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
