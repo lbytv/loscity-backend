@@ -52,7 +52,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
 
     try {
       console.log('📡 إرسال بيانات تسجيل الدخول...');
-      const response = await fetch('https://zmhqivcgezjl.manus.space/api/auth/login', {
+      const response = await fetch('https://loscity-backend.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
