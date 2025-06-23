@@ -95,7 +95,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
 
     try {
       console.log('📡 إرسال بيانات إنشاء الحساب...');
-      const response = await fetch('https://zmhqivcgezjl.manus.space/api/auth/register', {
+      const response = await fetch('https://loscity-backend.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
