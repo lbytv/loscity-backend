@@ -13,7 +13,7 @@ const UserDashboard = ({ user, onLogout }) => {
 
   const fetchUserApplications = async () => {
     try {
-      const response = await fetch('https://zmhqivcgezjl.manus.space/api/applications', {
+      const response = await fetch('https://loscity-backend.onrender.com', {
         credentials: 'include'
       });
 
