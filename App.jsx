@@ -22,7 +22,7 @@ function App() {
 
   const checkAuthStatus = async () => {
     try {
-      const response = await fetch('https://zmhqivcgezjl.manus.space/api/auth/check', {
+      const response = await fetch('hhttps://loscity-backend.onrender.com', {
         credentials: 'include'
       });
       
@@ -46,7 +46,7 @@ function App() {
 
   const handleLogout = async () => {
     try {
-      await fetch('https://zmhqivcgezjl.manus.space/api/auth/logout', {
+      await fetch('https://loscity-backend.onrender.com', {
         method: 'POST',
         credentials: 'include'
       });
