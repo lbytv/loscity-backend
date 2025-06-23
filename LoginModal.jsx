@@ -32,7 +32,7 @@ const LoginModal = ({ isOpen, onClose, onLogin }) => {
     setError('');
 
     try {
-      const response = await fetch("https://zmhqivcgezjl.manus.space/api/auth/admin-login", {
+      const response = await fetch("https://loscity-backend.onrender.com", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
